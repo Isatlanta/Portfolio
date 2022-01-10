@@ -1,0 +1,78 @@
+#splashbillede {
+  background-image: url(pics/forside/sunset1.jpg);
+  background-repeat: none;
+  background-size: cover;
+  max-width: 100%;
+  height: 50rem;
+  /* Hvor billedet lægger sig når man rykker skærmen sammen */
+  background-position: 60% 100%;
+  padding-top: 0;
+}
+
+#splashtekst {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 8rem;
+}
+
+#bokse {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 1rem;
+}
+
+#til_portfolio {
+  background-image: url(pics/forside/tevei-renvoye-oTlkBFUU0p8-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 25rem;
+  width: 30rem;
+  border: ridge 6px rgb(255, 115, 0);
+  border-radius: 5mm;
+  margin-left: 5rem;
+  padding-top: 20rem;
+  display: flex;
+  justify-content: center;
+  box-shadow: -10px 10px 20px #d98b32;
+}
+
+#til_om_mig {
+  background-image: url(pics/forside/good-free-photos-bZO84Q6lTzE-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 25rem;
+  width: 30rem;
+  border-radius: 5mm;
+  padding-top: 20rem;
+  border: ridge 6px rgb(255, 115, 0);
+  display: flex;
+  justify-content: center;
+  box-shadow: -10px 10px 20px #d98b32;
+}
+
+#bokse a {
+  list-style: none;
+  text-decoration: none;
+  font-family: charmonman;
+  font-size: 4rem;
+  justify-content: center;
+  color: #d96732;
+  text-shadow: -5px 5px 2.5px #632b11;
+}
+
+#bokse a:hover {
+  color: #d99132;
+  text-shadow: -5px 5px 2.5px #a04216;
+}
+
+footer {
+  background-color: #d98b32d7;
+  background-image: url(pics/forside/kent-pilcher-87MIF4vqHWg-unsplash.jpg);
+  background-size: cover;
+  height: 2rem;
+  padding: 2rem;
+  font-family: EB garamond;
+  font-size: 1.3rem;
+}
