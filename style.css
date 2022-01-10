@@ -1,3 +1,12 @@
+/* Sørger for at alt generelt ligger hvor det skal */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+}
+
 main {
   max-width: 100%;
   margin: 5px;
@@ -9,63 +18,98 @@ img {
 }
 
 body {
-  background-color: rgba(219, 166, 135, 0.795);
+  background-color: #f2e0d0;
+}
+
+header {
+  background-image: url(pics/forside/kent-pilcher-87MIF4vqHWg-unsplash.jpg);
+  background-size: cover;
 }
 
 h1 {
   font-family: Charmonman;
   font-size: 3.5rem;
   font-weight: 700;
+  padding-top: 1rem;
+  text-align: center;
+  text-shadow: 3px 3px 2px #733316;
+}
+
+#second_section h1 {
+  background-image: url(pics/forside/guldtekst.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
 }
 
 h2 {
   font-family: Charm;
   font-size: 2.5rem;
   font-weight: 700;
+  text-align: center;
+  padding-top: 1rem;
+  text-shadow: 2px 2px 2px #d96732;
 }
 
 h3 {
   font-family: Charm;
   font-size: 2rem;
   font-weight: 700;
+  text-align: center;
+  padding-top: 1rem;
+  text-shadow: 1px 2px 2px #d96732;
 }
 
 h4 {
   font-family: Charm;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 700;
+  text-align: center;
+  padding-top: 1rem;
+  text-shadow: 1px 1px 2px #d96732;
 }
 
 p {
   font-family: EB Garamond;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
+
+/* Links/menu */
 
 ul {
   list-style: none;
   display: flex;
   gap: 2rem;
   justify-content: center;
+  flex-flow: wrap;
 }
 
 ul a {
   text-decoration: none;
-  font-family: charmonman;
-  font-size: 2rem;
-  color: brown;
-  text-shadow: 0.5px 0.5px 0.5px rgb(24, 95, 30);
+  font-family: charm;
+  font-size: 1.5rem;
+  color: #731c16;
+  text-shadow: 2px 2px 2px #d98332;
+}
+
+ul a:hover {
+  color: #944517;
+  text-shadow: 2px 2px 2px #d6801d;
 }
 
 a {
   /* text-decoration: none; */
   font-family: EB Garamond;
   font-size: 1.2rem;
-  color: brown;
-  text-shadow: 0.5px 0.5px 0.5px rgb(24, 95, 30);
+  color: #731c16;
+  text-shadow: 1px 1px 1px #d98332;
 }
 
 a:hover {
-  color: crimson;
+  color: #944517;
+  text-shadow: 1px 1px 1px #d98332;
 }
 
 #first_section {
@@ -74,7 +118,16 @@ a:hover {
   top: 0;
 }
 
-/* Burgermenu */
+#splashbillede {
+  background-image: url(pics/forside/sunset1.jpg);
+  background-repeat: none;
+  background-size: cover;
+  max-width: 100%;
+  height: 50rem;
+  /* Hvor billedet lægger sig når man rykker skærmen sammen */
+  background-position: 60% 100%;
+  padding-top: 0;
+}
 
 @media (max-width: 600px) {
   .burgermenu {
@@ -98,39 +151,48 @@ a:hover {
 }
 
 @media (min-width: 600px) {
-  /* Burgermenu */
-
   .burgermenu {
     display: none;
   }
 
-  #box_1 {
+  #container_t02_0 {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  #container_t02_2 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr;
-    gap: 0.3rem;
+    gap: 0.5rem;
+    padding: 1rem;
   }
 
-  #box_1 img {
+  #container_t02_2 img {
     width: 40rem;
     max-height: 12rem;
   }
 
-  #box_2 {
+  #container_t02_1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 0.3rem;
+    gap: 0.5rem;
+    padding: 1rem;
   }
 
-  #box_3 {
+  #container_t02_3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0.3rem;
+    gap: 0.5rem;
+    padding: 1rem;
   }
 
-  #box_4 {
+  #container_t02_4 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2.5fr 1fr;
+    gap: 10px;
+    padding: 1rem;
   }
 
   #container_t03_1 {
