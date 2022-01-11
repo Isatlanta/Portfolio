@@ -1,5 +1,5 @@
 #splashbillede {
-  background-image: url(pics/forside/sunset1.jpg);
+  background-image: url(pics/forside/sunset1.webp);
   background-repeat: none;
   background-size: cover;
   max-width: 100%;
@@ -17,7 +17,7 @@
 }
 
 #til_portfolio {
-  background-image: url(pics/forside/tevei-renvoye-oTlkBFUU0p8-unsplash.jpg);
+  background-image: url(pics/forside/tevei-renvoye-oTlkBFUU0p8-unsplash.webp);
   background-size: cover;
   background-repeat: no-repeat;
   border: ridge 6px rgb(255, 115, 0);
@@ -30,7 +30,7 @@
 }
 
 #til_om_mig {
-  background-image: url(pics/forside/good-free-photos-bZO84Q6lTzE-unsplash.jpg);
+  background-image: url(pics/forside/good-free-photos-bZO84Q6lTzE-unsplash.webp);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 4rem;
