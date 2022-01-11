@@ -17,6 +17,12 @@ img {
   max-height: 100%;
 }
 
+hr {
+  border: 0;
+  border-top: 1px solid rgb(136, 73, 50);
+  margin: 1rem;
+}
+
 video {
   max-width: 95%;
   padding: 1rem;
@@ -31,6 +37,18 @@ header {
   background-size: cover;
 }
 
+footer {
+  background-color: #d98b32d7;
+  background-image: url(pics/forside/kent-pilcher-87MIF4vqHWg-unsplash.jpg);
+  background-size: cover;
+  height: 2rem;
+  padding: 2rem;
+  font-family: EB garamond;
+  font-size: 1.3rem;
+}
+
+/* Tekst */
+
 h1 {
   font-family: Charmonman;
   font-size: 3.5rem;
@@ -38,15 +56,6 @@ h1 {
   padding-top: 1rem;
   text-align: center;
   text-shadow: 3px 3px 2px #733316;
-}
-
-#second_section h1 {
-  background-image: url(pics/forside/guldtekst.jpg);
-  background-size: cover;
-  background-repeat: repeat;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: none;
 }
 
 h2 {
@@ -83,7 +92,7 @@ p {
 
 /* Links/menu */
 
-ul {
+header ul {
   list-style: none;
   display: flex;
   gap: 2rem;
@@ -117,22 +126,7 @@ a:hover {
   text-shadow: 1px 1px 1px #d98332;
 }
 
-#first_section {
-  background-color: rgba(214, 130, 61, 0.418);
-  position: sticky;
-  top: 0;
-}
-
-.link {
-  display: flex;
-  justify-content: center;
-  padding: 1rem;
-}
-
-.centreret_tekst {
-  text-align: center;
-  gap: 1rem;
-}
+/* Kun mobilversion */
 
 @media (max-width: 600px) {
   main {
@@ -142,19 +136,21 @@ a:hover {
   p {
     padding-bottom: 1rem;
   }
-  .burgermenu {
-  }
 
   nav {
     display: none;
   }
 
   nav.shown {
-    border-top: 1px solid #000;
-    padding-top: 1rem;
     display: flex;
-    flex: 1 1 100%;
     flex-flow: column;
+  }
+
+  .burgermenu {
+    background-color: rgba(199, 169, 94, 0.774);
+    border-radius: 5px;
+    border: ridge 4px rgba(196, 85, 11, 0.61);
+    padding: 0.5rem;
   }
 
   ul a {
@@ -196,6 +192,8 @@ a:hover {
     grid-row: 7/8;
   }
 }
+
+/* Kun større skærm version */
 
 @media (min-width: 600px) {
   .burgermenu {
@@ -378,6 +376,20 @@ a:hover {
   .t04_udfordringer {
     grid-column: 3/4;
     grid-row: 2/3;
+  }
+
+  #section05_1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+  }
+
+  #section05_1 img {
+    max-height: 15rem;
+  }
+
+  #pic_kira {
+    grid-column: 3/5;
   }
 
   #container_T05_1 {

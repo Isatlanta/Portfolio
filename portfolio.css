@@ -1,0 +1,33 @@
+#second_section h1 {
+  background-image: url(pics/forside/guldtekst.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-flow: wrap;
+}
+
+#first_section {
+  background-color: rgba(214, 130, 61, 0.418);
+  position: sticky;
+  top: 0;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.centreret_tekst {
+  text-align: center;
+  gap: 1rem;
+}
